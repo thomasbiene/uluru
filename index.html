@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uluru — 550 Million Years in One Rock</title>
+    <meta
+      name="description"
+      content="Uluru, in Australia's Red Centre: the geology, the colours, and the living culture of Anangu Country. An immersive long-form introduction."
+    />
+    <meta name="theme-color" content="#0b0908" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader" id="loader" aria-hidden="true">
+      <div class="loader__inner">
+        <span class="loader__mark">Uluru</span>
+        <span class="loader__meta">25°20′S &nbsp;131°02′E</span>
+        <span class="loader__line"><i></i></span>
+      </div>
+    </div>
+
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+    <a class="skip" href="#rock">Skip to content</a>
+
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <header class="nav" id="nav">
+      <a class="nav__brand" href="#top">
+        <span class="nav__mark">Uluru</span>
+        <span class="nav__sub">Red Centre</span>
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#rock">The Rock</a>
+        <a href="#anatomy">Anatomy</a>
+        <a href="#deep-time">Deep Time</a>
+        <a href="#country">Country</a>
+        <a href="#visit">Visit</a>
+      </nav>
+      <a class="nav__coords" href="#top">25°20′S · 131°02′E</a>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="hero__media">
+          <img
+            id="heroImg"
+            src="assets/pexels-sunrise.jpg"
+            alt="Uluru glowing deep red at sunrise, rising from golden spinifex and desert scrub under a pale sky."
+            fetchpriority="high"
+          />
+        </div>
+        <div class="hero__veil" aria-hidden="true"></div>
+
+        <div class="hero__content">
+          <p class="hero__kicker">Northern Territory · Australia</p>
+          <h1 class="hero__title" aria-label="Uluru">
+            <span>U</span><span>L</span><span>U</span><span>R</span><span>U</span>
+          </h1>
+          <p class="hero__sub">
+            A single rock. 550 million years.<br />
+            One living culture.
+          </p>
+        </div>
+
+        <div class="hero__edge hero__edge--left" aria-hidden="true">Uluru–Kata Tjuta National Park</div>
+        <div class="hero__edge hero__edge--right" aria-hidden="true">348 m above the plain</div>
+
+        <a class="hero__scroll" href="#rock">
+          <span>Begin</span>
+          <i aria-hidden="true"></i>
+        </a>
+      </section>
+
+      <!-- MARQUEE -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+          <span>Arkose</span><em>◆</em><span>Tjukurpa</span><em>◆</em><span>Inselberg</span><em>◆</em
+          ><span>Anangu</span><em>◆</em><span>9.4 km around</span><em>◆</em><span>550 Ma</span><em>◆</em>
+          <span>Arkose</span><em>◆</em><span>Tjukurpa</span><em>◆</em><span>Inselberg</span><em>◆</em
+          ><span>Anangu</span><em>◆</em><span>9.4 km around</span><em>◆</em><span>550 Ma</span><em>◆</em>
+        </div>
+      </div>
+
+      <!-- 01 THE ROCK -->
+      <section class="intro theme-sand" id="rock">
+        <div class="shell intro__grid">
+          <div class="intro__label">
+            <span class="num">01</span>
+            <span>The Rock</span>
+          </div>
+          <div class="intro__body">
+            <h2 class="statement" data-split>
+              It is not a mountain to be conquered. It is a landmark of stone, law and memory.
+            </h2>
+            <p class="lede" data-reveal>
+              Uluru rises 348 metres out of the central Australian plain — taller than the Eiffel
+              Tower, wider than it is high, and heavier than anything else standing on the
+              continent. Most of it is still underground. All of it is Anangu Country.
+            </p>
+
+            <div class="stats" data-reveal>
+              <div class="stat">
+                <span class="stat__value"><span data-count="348">348</span><i>m</i></span>
+                <span class="stat__label">above the plain</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value"><span data-count="9.4" data-decimals="1">9.4</span><i>km</i></span>
+                <span class="stat__label">around the base</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value"><span data-count="550">550</span><i>Ma</i></span>
+                <span class="stat__label">years in the making</span>
+              </div>
+              <div class="stat">
+                <span class="stat__value"><span data-count="1.425" data-decimals="3">1.425</span><i>Bt</i></span>
+                <span class="stat__label">above ground alone</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 ANATOMY -->
+      <section class="anatomy theme-ink" id="anatomy">
+        <div class="shell anatomy__grid">
+          <div class="anatomy__stage" aria-live="off">
+            <figure class="frame is-active" data-frame="0">
+              <img
+                src="assets/close_up_uluru.jpg"
+                alt="Close view of Uluru's weathered sandstone surface, ochre and rust-red, above desert scrub."
+                loading="lazy"
+              />
+              <figcaption><span>01</span> The skin</figcaption>
+            </figure>
+            <figure class="frame" data-frame="1">
+              <img
+                src="assets/pexels-sunset.jpg"
+                alt="Uluru's fluted flanks and near-vertical bedding lines under a clear evening sky."
+                loading="lazy"
+              />
+              <figcaption><span>02</span> The flanks</figcaption>
+            </figure>
+            <figure class="frame" data-frame="2">
+              <img
+                src="assets/base_of_uluru.jpg"
+                alt="The base of Uluru from the walking track: red rock walls rising above sand and desert scrub."
+                loading="lazy"
+              />
+              <figcaption><span>03</span> The base</figcaption>
+            </figure>
+            <div class="stage__count" aria-hidden="true"><span id="stageIndex">01</span> / 03</div>
+          </div>
+
+          <div class="anatomy__copy">
+            <div class="anatomy__head">
+              <span class="num">02</span>
+              <h2>Anatomy of<br /><em>a monolith</em></h2>
+            </div>
+
+            <article class="step" data-step="0">
+              <span class="num">01</span>
+              <h3>The skin</h3>
+              <p>
+                The red is a rind, not the rock. Iron-bearing minerals in the arkose weather to
+                hematite; fresh stone beneath is grey-green. Every dawn and dusk repaints the
+                surface.
+              </p>
+            </article>
+
+            <article class="step" data-step="1">
+              <span class="num">02</span>
+              <h3>The flanks</h3>
+              <p>
+                Beds of sandstone stand almost vertical, planed by wind and water into ribs and
+                flutes. Those stripes are 550-million-year-old layers seen edge-on.
+              </p>
+            </article>
+
+            <article class="step" data-step="2">
+              <span class="num">03</span>
+              <h3>The base</h3>
+              <p>
+                Caves, overhangs and waterholes ring the rock — shelter, canvas and law. Mutitjulu,
+                on the south side, is among the most significant places in the park.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 DEEP TIME -->
+      <section class="timeline theme-ink" id="deep-time">
+        <div class="timeline__sticky">
+          <div class="shell timeline__head">
+            <div class="intro__label">
+              <span class="num">03</span>
+              <span>Deep Time</span>
+            </div>
+            <h2>Four hundred million years,<br /><em>told in five moves.</em></h2>
+            <p class="timeline__hint" aria-hidden="true">Scroll →</p>
+          </div>
+
+          <div class="timeline__track" id="timelineTrack">
+            <article class="epoch">
+              <span class="epoch__age">550 Ma</span>
+              <h3>Sand, not stone</h3>
+              <p>
+                Granite ranges to the south erode. Feldspar-rich sand fans out across the plain —
+                coarse, fresh, and destined for something else.
+              </p>
+            </article>
+            <article class="epoch">
+              <span class="epoch__age">500 Ma</span>
+              <h3>Buried by a sea</h3>
+              <p>
+                A shallow sea covers the sand. Pressure and minerals cement it into arkose: hard,
+                gritty, and full of the iron that will one day rust red.
+              </p>
+            </article>
+            <article class="epoch">
+              <span class="epoch__age">400–300 Ma</span>
+              <h3>Tipped on end</h3>
+              <p>
+                Crustal movement folds the beds and stands them almost vertical. Uluru's stripes
+                are those layers, seen from the side.
+              </p>
+            </article>
+            <article class="epoch">
+              <span class="epoch__age">300 Ma → now</span>
+              <h3>The soft rock leaves</h3>
+              <p>
+                Erosion strips the surrounding rock away. The hardest core is left standing —
+                an inselberg, an island mountain in a sea of sand.
+              </p>
+            </article>
+            <article class="epoch">
+              <span class="epoch__age">Tens of thousands of years</span>
+              <h3>Law arrives</h3>
+              <p>
+                Anangu live with this country. Tjukurpa binds people, land and ancestral beings;
+                the rock becomes a record, not a backdrop.
+              </p>
+            </article>
+          </div>
+
+          <div class="timeline__bar" aria-hidden="true"><span id="timelineBar"></span></div>
+        </div>
+      </section>
+
+      <!-- 04 COUNTRY -->
+      <section class="country theme-ink" id="country">
+        <div class="shell country__grid">
+          <div class="country__media" data-reveal>
+            <img
+              src="assets/aerial_view_of_uluru_at_sunset.jpg"
+              alt="Aerial view of Uluru at sunset, a single red monolith alone on the desert plain."
+              loading="lazy"
+            />
+            <span class="country__tag">Anangu land · never ceded</span>
+          </div>
+
+          <div class="country__copy">
+            <div class="intro__label">
+              <span class="num">04</span>
+              <span>Anangu Country</span>
+            </div>
+            <h2 data-reveal>The land is the law.</h2>
+            <p class="lede" data-reveal>
+              Uluru is not scenery with a story attached. For Anangu — the Pitjantjatjara and
+              Yankunytjatjara people — it is a living record of Tjukurpa: creation, law, ecology
+              and map in one.
+            </p>
+            <p data-reveal>
+              Some places on the rock are men's business, some women's. Some are open to everyone,
+              with a guide, on foot. Photographs are restricted where knowledge is restricted.
+              Those rules are not obstacles to the visit; they are the reason it means anything.
+            </p>
+
+            <ol class="milestones">
+              <li data-reveal>
+                <time>1985</time>
+                <p>Title deeds returned to Anangu on 26 October; the park is leased back for 99 years.</p>
+              </li>
+              <li data-reveal>
+                <time>1987</time>
+                <p>World Heritage listed for its natural values; cultural values follow in 1994.</p>
+              </li>
+              <li data-reveal>
+                <time>2019</time>
+                <p>The climb closes permanently on 26 October, the handback's anniversary.</p>
+              </li>
+            </ol>
+
+            <a class="link-arrow" href="#visit" data-cursor>
+              How to visit with respect
+              <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="gallery theme-ink" id="gallery">
+        <div class="shell gallery__head">
+          <div class="intro__label">
+            <span class="num">05</span>
+            <span>Light</span>
+          </div>
+          <h2>The rock is a different<br /><em>object at every hour.</em></h2>
+        </div>
+
+        <div class="rail" id="rail">
+          <div class="rail__track" id="railTrack">
+            <figure class="shot">
+              <img src="assets/pexels-sunrise.jpg" alt="Uluru at sunrise, deep red above flat desert scrub." loading="lazy" />
+              <figcaption><span>Dawn</span> First light, north-east face</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/pexels-sunset.jpg" alt="Uluru glowing in low sunlight across red desert." loading="lazy" />
+              <figcaption><span>Golden hour</span> Iron and hematite</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/pexels-kata-tjuta.jpg" alt="The rounded domes of Kata Tjuta under a clear sky." loading="lazy" />
+              <figcaption><span>32 km west</span> Kata Tjuta's 36 domes</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/close_up_uluru.jpg" alt="Close detail of Uluru's fluted sandstone surface." loading="lazy" />
+              <figcaption><span>Detail</span> Arkose beds, near vertical</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/aerial_view_of_uluru_at_sunset.jpg" alt="Aerial view of Uluru at sunset across the plain." loading="lazy" />
+              <figcaption><span>From above</span> One rock, 9.4 km around</figcaption>
+            </figure>
+            <figure class="shot">
+              <img src="assets/base_of_uluru.jpg" alt="Uluru's base and walking track." loading="lazy" />
+              <figcaption><span>On foot</span> The Base Walk</figcaption>
+            </figure>
+          </div>
+        </div>
+        <p class="rail__hint" aria-hidden="true">Hover to hold · photographs are credited in the footer</p>
+      </section>
+
+      <!-- 06 VISIT -->
+      <section class="visit theme-sand" id="visit">
+        <div class="shell">
+          <div class="visit__head">
+            <div class="intro__label">
+              <span class="num">06</span>
+              <span>Visit</span>
+            </div>
+            <div>
+              <h2 data-reveal>A desert with<br /><em>strict manners.</em></h2>
+              <p class="lede" data-reveal>
+                Two nights minimum: one for the rock, one for Kata Tjuta. Walk early, carry more
+                water than you think, and let Anangu guide the meaning.
+              </p>
+            </div>
+          </div>
+
+          <div class="visit__grid">
+            <article class="card" data-reveal>
+              <span class="card__num">01</span>
+              <h3>Base Walk</h3>
+              <p>9.4 km, flat but exposed. Three to four hours, best started at first light.</p>
+              <span class="card__meta">On foot · 9.4 km</span>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card__num">02</span>
+              <h3>Sunrise &amp; sunset</h3>
+              <p>Arrive 45 minutes early and stay for the afterglow. The colour is the event.</p>
+              <span class="card__meta">Twice daily · free</span>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card__num">03</span>
+              <h3>Kata Tjuta</h3>
+              <p>Thirty-six conglomerate domes, 32 km west. The Valley of the Winds is the walk.</p>
+              <span class="card__meta">32 km west · harder</span>
+            </article>
+            <article class="card" data-reveal>
+              <span class="card__num">04</span>
+              <h3>Cultural Centre</h3>
+              <p>Anangu voices, art and Tjukurpa. Go before you walk, not after.</p>
+              <span class="card__meta">Free · open daily</span>
+            </article>
+          </div>
+
+          <ul class="practical" data-reveal>
+            <li><span>Season</span> May–September, 15–25 °C days</li>
+            <li><span>Water</span> 3–4 litres per person, per day</li>
+            <li><span>Entry</span> Park pass required</li>
+            <li><span>Climb</span> Closed permanently since 2019</li>
+            <li><span>Access</span> Yulara · Connellan Airport (AYQ)</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer theme-ink">
+      <div class="shell">
+        <div class="footer__top">
+          <span class="footer__word" aria-hidden="true">Uluru</span>
+          <div class="footer__cols">
+            <div>
+              <h4>Place</h4>
+              <p>Uluru–Kata Tjuta National Park<br />Northern Territory, Australia<br />25°20′S 131°02′E</p>
+            </div>
+            <div>
+              <h4>Sources</h4>
+              <p>
+                Parks Australia<br />
+                UNESCO World Heritage Centre<br />
+                National Museum of Australia
+              </p>
+            </div>
+            <div>
+              <h4>Photography</h4>
+              <p>
+                Dimageau, Emily Cox, Michelle Corcoran (Wikimedia Commons, CC BY-SA) · Jonas
+                Schallenberg, Gu Bra, Ben Prater, Will McAllister (Pexels)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p>
+            Uluru is Anangu land. This page is an introduction, not a substitute — hear it from
+            Anangu at the Cultural Centre and on a guided walk.
+          </p>
+          <a href="#top" data-cursor>Back to top ↑</a>
+        </div>
+      </div>
+    </footer>
+
+    <noscript>
+      <style>
+        .loader { display: none; }
+        [data-reveal], .statement .word > span { opacity: 1 !important; transform: none !important; }
+      </style>
+    </noscript>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
